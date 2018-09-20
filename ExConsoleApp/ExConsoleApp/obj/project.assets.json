@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Github\\C#\\ExConsoleApp\\ExConsoleApp\\ExConsoleApp.csproj",
+      "projectUniqueName": "C:\\Projects\\Github\\CShrp\\ExConsoleApp\\ExConsoleApp\\ExConsoleApp.csproj",
       "projectName": "ExConsoleApp",
-      "projectPath": "C:\\Projects\\Github\\C#\\ExConsoleApp\\ExConsoleApp\\ExConsoleApp.csproj",
+      "projectPath": "C:\\Projects\\Github\\CShrp\\ExConsoleApp\\ExConsoleApp\\ExConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Github\\C#\\ExConsoleApp\\ExConsoleApp\\obj\\",
+      "outputPath": "C:\\Projects\\Github\\CShrp\\ExConsoleApp\\ExConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

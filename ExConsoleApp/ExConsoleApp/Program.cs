@@ -1,23 +1,149 @@
 ﻿using ExConsoleApp.Math;
 using System;
+using System.Collections.Generic;
 
-namespace ExConsoleApp
-{
-    class Program
-    {
-        /*
-        //Enum
-        public enum ShippingMethod
-        {
-            RegularAirMail = 1,
-            RegisteredAirMail = 2,
-            Express = 3
-        }
-        */
-        static void Main(string[] args)
-        {
+namespace ExConsoleApp {
+    class Program {
+        static void Main(string[] args) {
+            // Lists
+            var numbers = new List<int>() { 1, 2, 3, 4 };
+            // Add
+            numbers.Add(1);
+            // AdRange
+            numbers.AddRange(new int[3] { 5, 6, 7 });
+            foreach( var number in numbers ) {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine("Index of 1: " + numbers.IndexOf(1));
+            Console.WriteLine("Last Index of 1: " + numbers.LastIndexOf(1));
+            Console.WriteLine("Count: " + numbers.Count);
+            // Remove
+            for( var i = 0; i < numbers.Count; i++ ) {
+                if( numbers[i] == 1 ) {
+                    numbers.Remove(numbers[i]);
+                }
+            }
+            foreach( var number in numbers ) {
+                Console.WriteLine(number);
+            }
+            numbers.Clear();
+            Console.WriteLine("Count: " + numbers.Count);
             /*
-            // enum
+            // ArrAys
+            // int[] numbers = new int[] { 1, 2, 3, 7, 5, 4 };
+            var numbers = new[] { 1, 2, 3, 4, 5, 6 };
+            // Length
+            Console.WriteLine("Length: " + numbers.Length);
+            // IndexOf()
+            var index = Array.IndexOf(numbers, 7);
+            Console.WriteLine("Index of 6: " + index);
+            // Clear()
+            Array.Clear(numbers, 0, 3);
+            // Copy()
+            var numbers1 = new int[3];
+            Array.Copy(numbers1, numbers, 3);
+            // Sort()
+            Array.Sort(numbers);
+            // Reverse()
+            Array.Reverse(numbers);
+            foreach (var n in numbers ) {
+                Console.WriteLine(n);
+            }
+            */
+            /*
+            // While Loop
+            while( true ) {
+                Console.Write("Type your name: ");
+                var input = Console.ReadLine();
+                if( !String.IsNullOrWhiteSpace(input) ) {
+                    Console.WriteLine("@Echo: " + input);
+                    // continue;
+                }
+                break;
+            }
+            var i = 0;
+            while( i < 10 ) {
+                if( i % 2 == 0 ) {
+                    Console.WriteLine(i);
+
+                }
+                i++;
+            }
+            */
+            /*
+            // Foreach loop
+            var numbers = new int[] {
+                1, 2, 3, 4
+            };
+            foreach( var number in numbers ) {
+                Console.WriteLine(number);
+            };
+            var name = "John Smith";
+            for ( var i = 0; i < name.Length; i++ ) {
+                Console.WriteLine(name[i]);
+            }
+
+            foreach (var character in name) {
+                Console.WriteLine(character);
+            }
+            */
+            /*
+            // For Loop
+            for( int i = 1; i <= 10; i++ ) {
+                if( i % 2 == 0 ) {
+                    Console.WriteLine(i);
+                }
+            }
+            for( int i = 10; i >= 1; i-- ) {
+                if( i % 2 == 0 ) {
+                    Console.WriteLine(i);
+                }
+            }
+            */
+            /*
+            // If Else and Switch Case
+            var season = Season.Autumn;
+            switch( season ) {
+                case Season.Spring:
+                case Season.Summer:
+                    Console.WriteLine("It's a nice season");
+                    break;
+                case Season.Winter:
+                    Console.WriteLine("It's a beautiful season.");
+                    break;
+                default:
+                    Console.WriteLine("It's a good season");
+                    break;
+            } 
+            bool isGoldCostumer = true;
+            //float price;
+            //if( isGoldCostumer ) {
+            //    price = 19.95f;
+            //} else {
+            //    price = 29.95f;
+            //}
+            float price = (isGoldCostumer) ? 19.95f : 29.95f;
+            Console.WriteLine(price);
+            int hour = 10;
+            if ( hour > 0 && hour < 12 ) {
+                Console.WriteLine("It's Morning");
+            } else if ( hour > 12 && hour < 18 ) {
+                Console.WriteLine("It's Afternoon");
+            } else {
+                Console.WriteLine("It's Evening");
+            }
+            */
+            /*
+            // Reference Types and Value Types (See Btm Page)
+            var number = 1;
+            Increment(number);
+            Console.WriteLine(number);
+            var person = new Person1() { Age = 20 };
+            MakeOld(person);
+            Console.WriteLine(person.Age);
+            */
+            /*
+            // enum (look up at bottom page)
             var method = ShippingMethod.Express;
             Console.WriteLine((int)method);
             var methodId = 3;
@@ -37,9 +163,9 @@ namespace ExConsoleApp
             var formattedNames = string.Join(",", names);
             Console.WriteLine(formattedNames);
             var text = @"Hi John
-    Look into the following paths
-    C:\folder1
-    C:\folder2";
+      Look into the following paths
+      C:\folder1
+      C:\folder2";
             Console.WriteLine(text);
             */
             /*
@@ -124,6 +250,35 @@ namespace ExConsoleApp
             Console.WriteLine(c > b && a > b);
             Console.WriteLine(!(c > b || c == a));
             */
+            // Reference Types and Value Types
+
         }
+        /*
+        // Reference and Value Type
+        public static void Increment(int number)
+        {
+            number += 10;
+        }
+        public static void MakeOld(Person1 person)
+        {
+            person.Age += 10;
+        }
+        */
     }
+    /*
+    //Enum
+    public enum ShippingMethod
+    {
+        RegularAirMail = 1,
+        RegisteredAirMail = 2,
+        Express = 3
+    }
+    */
+    /*
+    // Reference and Value Types
+    public class Person1
+    {
+        public int Age;
+    }
+    */
 }

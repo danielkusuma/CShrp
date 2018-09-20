@@ -9,3 +9,14 @@ C:\Projects\Github\C#\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsol
 C:\Projects\Github\C#\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.AssemblyInfo.cs
 C:\Projects\Github\C#\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.dll
 C:\Projects\Github\C#\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.pdb
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.csprojAssemblyReference.cache
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.csproj.CoreCompileInputs.cache
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.AssemblyInfoInputs.cache
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.AssemblyInfo.cs
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.dll
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\obj\Debug\netcoreapp2.0\ExConsoleApp.pdb
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\bin\Debug\netcoreapp2.0\ExConsoleApp.deps.json
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\bin\Debug\netcoreapp2.0\ExConsoleApp.runtimeconfig.json
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\bin\Debug\netcoreapp2.0\ExConsoleApp.runtimeconfig.dev.json
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\bin\Debug\netcoreapp2.0\ExConsoleApp.dll
+C:\Projects\Github\CShrp\ExConsoleApp\ExConsoleApp\bin\Debug\netcoreapp2.0\ExConsoleApp.pdb
