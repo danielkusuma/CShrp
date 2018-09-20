@@ -1,10 +1,60 @@
 ﻿using ExConsoleApp.Math;
 using System;
-using System.Collections.Generic;
+using System.Collections.Generic; //List
+using System.Text; //StringBuilder
 
 namespace ExConsoleApp {
     class Program {
         static void Main(string[] args) {
+            //StringBuilder
+            var builder = new StringBuilder();
+            //Append
+            builder.Append('-', 10);
+            builder.AppendLine();
+            builder.Append("Header");
+            builder.AppendLine();
+            builder.Append('-', 10);
+            Console.WriteLine(builder);
+            //Replace
+            builder.Replace('-', '+');
+            Console.WriteLine(builder);
+            /*
+            //String
+            var fullName = "Daniel Kusuma ";
+            // Trim
+            Console.WriteLine("Trim: '{0}' ", fullName.Trim());
+            // ToUpper
+            Console.WriteLine("ToUpper: '{0}'", fullName.Trim().ToUpper());
+            // Substring
+            var index = fullName.IndexOf(' ');
+            var firstName = fullName.Substring(0, index);
+            var lastName = fullName.Substring(index + 1);
+            Console.WriteLine("FirstName: " + firstName);
+            Console.WriteLine("LastName: " + lastName);
+            // Split
+            var names = ( fullName.Split(' ') );
+            Console.WriteLine("FirstName: " + names[0]);
+            Console.WriteLine("LastName:" + names[1]);
+            // Replace
+            Console.WriteLine(fullName.Replace("Daniel", "Dan"));
+            Console.WriteLine(fullName.Replace('i', 'I'));
+            // isNullOrWhiteSpace
+            if(String.IsNullOrEmpty(" ".Trim())) {
+                Console.WriteLine("Invalid");
+            }
+            if( String.IsNullOrWhiteSpace(" ") ) {
+                Console.WriteLine("Invalid");
+            }
+            // Convert
+            var str = "25";
+            var age = Convert.ToByte(str);
+            Console.WriteLine(age);
+            // ToString
+            float price = 29.95f;
+            Console.WriteLine(price.ToString("C"));
+            Console.WriteLine(price.ToString("C0"));
+            */
+            /*
             // Lists
             var numbers = new List<int>() { 1, 2, 3, 4 };
             // Add
@@ -28,6 +78,7 @@ namespace ExConsoleApp {
             }
             numbers.Clear();
             Console.WriteLine("Count: " + numbers.Count);
+            */
             /*
             // ArrAys
             // int[] numbers = new int[] { 1, 2, 3, 7, 5, 4 };
