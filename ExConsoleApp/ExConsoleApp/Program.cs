@@ -7,17 +7,25 @@ namespace ExConsoleApp {
     class Program {
         static void Main(string[] args) {
             //StringBuilder
-            var builder = new StringBuilder();
+            //var builder = new StringBuilder();
+            var builder = new StringBuilder("Hello World");
             //Append
             builder.Append('-', 10);
             builder.AppendLine();
-            builder.Append("Header");
-            builder.AppendLine();
-            builder.Append('-', 10);
+            builder.Append("Header")
+                   .AppendLine()
+                   .Append('-', 10);
             Console.WriteLine(builder);
             //Replace
             builder.Replace('-', '+');
             Console.WriteLine(builder);
+            //Remove
+            builder.Remove(0, 10);
+            Console.WriteLine(builder);
+            //Insert
+            builder.Insert(0, new string('-', 10));
+            Console.WriteLine(builder);
+            Console.WriteLine("First Char: " + builder[0]);
             /*
             //String
             var fullName = "Daniel Kusuma ";
