@@ -1,11 +1,27 @@
 ﻿using ExConsoleApp.Math;
 using System;
 using System.Collections.Generic; //List
+using System.Linq;
 using System.Text; //StringBuilder
+using System.IO;
 
 namespace ExConsoleApp {
     class Program {
         static void Main(string[] args) {
+            File.OpenWrite
+            /*
+            // Demo Codility
+            // create an array of N (integer between 1 - 100000)
+            // var n = Enumerable.Range(1, 10000).ToList();
+            // create an array of A (integer between -1kk - 1kk)
+            // var a = Enumerable.Range(-1000000, 1000000).ToList();
+            var a = new int[] { -1, -3 };
+            var n = Enumerable.Range(1, 10000).ToList();
+            var exist = n.Except(a).ToList();
+            exist.RemoveAll(i => i < 0);
+            Console.WriteLine(exist.First());
+            */
+            /*
             //StringBuilder
             //var builder = new StringBuilder();
             var builder = new StringBuilder("Hello World");
@@ -26,6 +42,7 @@ namespace ExConsoleApp {
             builder.Insert(0, new string('-', 10));
             Console.WriteLine(builder);
             Console.WriteLine("First Char: " + builder[0]);
+            */
             /*
             //String
             var fullName = "Daniel Kusuma ";
@@ -124,7 +141,6 @@ namespace ExConsoleApp {
             while( i < 10 ) {
                 if( i % 2 == 0 ) {
                     Console.WriteLine(i);
-
                 }
                 i++;
             }
@@ -141,7 +157,6 @@ namespace ExConsoleApp {
             for ( var i = 0; i < name.Length; i++ ) {
                 Console.WriteLine(name[i]);
             }
-
             foreach (var character in name) {
                 Console.WriteLine(character);
             }
@@ -193,13 +208,21 @@ namespace ExConsoleApp {
             }
             */
             /*
-            // Reference Types and Value Types (See Btm Page)
-            var number = 1;
-            Increment(number);
-            Console.WriteLine(number);
-            var person = new Person1() { Age = 20 };
-            MakeOld(person);
-            Console.WriteLine(person.Age);
+            // Reference and Value Types (See Btm Page)
+            var a = 10;
+            var b = a;
+            b++;
+            Console.WriteLine(string.Format("a: {0}, b: {1}", a, b));
+            var array1 = new int[3] { 1, 2, 3 };
+            var array2 = array1;
+            array2[0] = 0;
+            Console.WriteLine(string.Format("arrray1[0]: {0}, array2[]: {1}", array1[0], array2[0]));
+            // var number = 1;
+            // Increment(number);
+            // Console.WriteLine(number);
+            // var person = new Person1() { Age = 20 };
+            // MakeOld(person);
+            // Console.WriteLine(person.Age);
             */
             /*
             // enum (look up at bottom page)
@@ -240,7 +263,6 @@ namespace ExConsoleApp {
             Console.WriteLine(flags[0]);
             Console.WriteLine(flags[1]);
             Console.WriteLine(flags[2]);
-
             var names = new string[3] { "Jack", "John", "Mary" };
             */
             /*
@@ -277,21 +299,17 @@ namespace ExConsoleApp {
             /*
             // Type Conversion
             int i = 1;
-            byte b = (byte) i;
+            byte b = (byte)i;
             // max byte = 255
             Console.WriteLine(b);
-            try
-            {
-
+            try {
                 // var number = 1234;
                 // int j = Convert.ToByte(number);
                 // Console.WriteLine(j);   
                 string str = "true";
                 bool j = Convert.ToBoolean(str);
                 Console.WriteLine(j);
-            }
-            catch (Exception)
-            {
+            } catch( Exception ) {
                 Console.WriteLine("The number cannot be converted to a byte");
             }
             */
@@ -310,24 +328,20 @@ namespace ExConsoleApp {
             Console.WriteLine(!(c > b || c == a));
             */
             // Reference Types and Value Types
-
         }
         /*
         // Reference and Value Type
-        public static void Increment(int number)
-        {
+        public static void Increment(int number) {
             number += 10;
         }
-        public static void MakeOld(Person1 person)
-        {
+        public static void MakeOld(Person1 person) {
             person.Age += 10;
         }
         */
     }
     /*
     //Enum
-    public enum ShippingMethod
-    {
+    public enum ShippingMethod {
         RegularAirMail = 1,
         RegisteredAirMail = 2,
         Express = 3
@@ -335,8 +349,7 @@ namespace ExConsoleApp {
     */
     /*
     // Reference and Value Types
-    public class Person1
-    {
+    public class Person1 {
         public int Age;
     }
     */
